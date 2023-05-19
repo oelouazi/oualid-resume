@@ -1,0 +1,44 @@
+# Global variables
+variables:
+  IMAGE_NAME: "amannocci/oelouazi-resume"
+
+# Stage
+stages:
+  - build
+  - package
+  - trigger
+
+# Includes
+include:
+  - project: 'techcode/tools/factory'
+    file: 'package.yml'
+  - project: 'techcode/tools/factory'
+    file: 'trigger.yml'
+    
+
+# Build static
+build:static:
+  stage: 'build'
+  image:
+    name: 'klakegg/hugo:0.78.2'
+  script:
+    - rm -rf public/ resources/_gen
+    - hugo
+  artifacts:
+    paths:
+      - public/
+
+# Package docker
+package:docker:
+  extends: .package:docker
+  dependencies:
+    - build:static
+
+# Trigger deploy
+trigger:deploy:
+  variables:
+    PROJECT_TOKEN: '4cf82125f160718f0e1c68e002e270'
+    ORG: 'techcode'
+    APP: 'oelouazi-net'
+    COMPONENT: 'server'
+  extends: .trigger:deploy

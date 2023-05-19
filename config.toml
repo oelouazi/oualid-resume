@@ -1,0 +1,231 @@
+# Page settings
+
+baseURL = "https://oelouazi-net.techcode.io/"
+languageCode = "en"
+title = "CV - Étudiant en Génie Informatique "
+theme = "hugo-devresume-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+    author = "CowboySmall"
+    description = "DevResume - Bootstrap 4 Resume/CV Template For Software Developers"
+
+    primaryColor = "#54B689"
+    textPrimaryColor = "#292929"
+
+    [params.profile]
+        enable = true
+        name = "Oualid elouazi"
+        tagline = "Etudiant en Génie informatique "
+        avatar = "avatar1.png"
+
+    [params.contact]
+        enable = true
+        location = "Le Havre"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:#"
+        text = "+33 7 87 57 45 47"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:#"
+        text = "oelouazi@gmail.com"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "https://github.com/oelouazi"
+        text = "github.com/oelouazi"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Technique"
+        [[params.skills.list.items]]
+        details = "spark"
+        [[params.skills.list.items]]
+        details = "Java8/Python3/Scala"
+        [[params.skills.list.items]]
+        details = "Pandas/Polars"
+         [[params.skills.list.items]]
+        details = "SQL/MySQL/BigData"
+        [[params.skills.list.items]]
+        details = "Web/Django/Flask"
+
+        [[params.skills.list]]
+        title = "Professionelle"
+        [[params.skills.list.items]]
+        details = "Autonome"
+        [[params.skills.list.items]]
+        details = "Esprit d'équipe"
+        [[params.skills.list.items]]
+        details = "Résolution de problèmes"
+        [[params.skills.list.items]]
+        details = "Curieux"
+
+    [params.education]
+        enable = false
+
+        [[params.education.list]]
+        degree = "Génie Télécomunication & Réseaux"
+        university = "Safi"
+        dates = "2018 - Présent"
+        [[params.education.list]]
+        degree = "CNC - Physique Chimie & Sciences de l’ingénieure"
+        university = "Marrakech"
+        dates = "2016 - 2018"
+
+    [params.awards]
+        enable = true
+        
+        [[params.awards.list]]
+        name = "Apache Spark 3 & Big Data Essentials in Scala | Rock the JVM"
+        body = "Udemy"
+        date = "05/2023"
+        
+        [[params.awards.list]]
+        name = "Scala & Functional Programming Essentials | Rock the JVM "
+        body = "Udemy"
+        date = "11/2020"
+        
+        [[params.awards.list]]
+        name = "Découvrir Git "
+        body = "Linkedin LEARNING"
+        date = "11/2020"
+        
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "Arabe"
+        level = "Natif"
+        [[params.languages.list]]
+        name = "Français"
+        level = "Professionelle ,TCF : C1"
+        [[params.languages.list]]
+        name = "Anglais"
+        level = "Professionelle"
+
+    [params.interests]
+        enable = true
+
+        [[params.interests.list]]
+        name = "Manga"
+        [[params.interests.list]]
+        name = "Programmation"
+        [[params.interests.list]]
+        name = "Sport"
+
+    [params.summary]
+        enable = true
+        text = """
+Etudiant en Master Informatique, passionné par les systèmes de traitement de données. Compétences en programmation et solide expérience en manipulation et optimisation d'infrastructure de données. Prêt à apporter mes compétences et ma passion à une entreprise cherchant à améliorer son potentiel de traitement de données.
+"""
+
+    [params.experience]
+        enable = true
+        
+        
+         [[params.experience.list]]
+        title = "Data Engineering"
+        dates = "août 2021 - août 2022"
+        company = "Berexia"
+        details = """
+ * J'ai travaillé sur des ensembles de données volumineux de plus de 500 Mo pour chaque fichier collecter et analyser.
+ * Mise en place d’un processus pour assurer la qualité des données.
+ * En normalisant et en standardisant les données, j'ai réussi à améliorer les performances de recherche de 90%".
+ * Garantir la qualité et l'exactitude des données que nous utilisons pour nos analyses.
+ * L'API que j'ai développée traite en moyenne 2000 requêtes par jour.
+ * L'application web que j'ai développée compte actuellement plus de 200 utilisateurs actifs .
+* `Technologies:`  Python 3.9 , flask , Pycharm , Git , pandas , mongodb , jenkins
+"""
+
+        
+        [[params.experience.list]]
+        title = "Data Engineering - Machine Learning "
+        dates = "février 2021 - août 2021"
+        company = "O.N.E.E"
+        details = """
+* Développement d'un programme de reconnaissance faciale basé sur l'intelligence artificiel garantissant l'accès aux centres de données de l'ONEE.
+* Développement d'une application analysant en temps réel la température d'un ensemble de périphérique afin de détecter toute surchauffe au seins du centre de donnée.
+* Développement d'un chat bot capable d'interpréter des commandes vocales et d'analyser les sentiments exprimés dans ces dernières.
+* Réalisation d'une interface web permettant l'utilisation d'un ensemble de service.
+* `Technologies:`  Python 3.9 , Django2.2 , Pycharm , Git , Azure machine learning
+"""
+        
+
+
+        [[params.experience.list]]
+        title = "Data Engineering - Classement de données AIS suivant leur zone d'émission"
+        dates = "mai 2023"
+        company = "Projet"
+        details = """
+* Conçu et développé un programme efficace pour traiter des fichiers CSV volumineux contenant des millier de messages de navires du monde entier, réduisant ainsi le temps de traitement de 50 % par rapport aux solutions précédentes.
+* Mis en œuvre des filtres sophistiqués pour extraire les messages les plus importants de chaque période de temps, permettant ainsi de réduire le nombre de messages traités de 80 %.
+* Optimisé le programme pour réduire la consommation de mémoire de 60 %, permettant ainsi de traiter des fichiers plus volumineux avec des ordinateurs moins performants et économisant de l'argent sur les coûts d'infrastructure.
+* `Technologies:`  Python 3.9 , Pycharm , Git , Polars
+"""
+
+        
+
+    [params.projects]
+        enable = true
+
+
+         [[params.projects.list]]
+        title = " Master Informatique"
+        meta = "Université du havre | 2022 - Présent"
+        tagline = """
+* Programmation fonctionnelle
+* Intelligence Artificielle
+* Parallélisme
+* Modélisation
+"""
+
+
+        [[params.projects.list]]
+        title = " Génie Télécomunication & Réseaux"
+        meta = "E.N.S.A de safi | 2018 - 2021"
+        tagline = """
+* Administration système & réseaux
+* Programmation d'applications en Java Avancée
+* Conception et développement des applications
+* Etudes des microprocesseurs
+"""
+
+        [[params.projects.list]]
+        title = "CNC - Physique Chimie & Sciences de l'ingénieure"
+        meta = "Marrakech | 2016 - 2018"
+        tagline = """
+* Classes préparatoires aux grandes écoles IBN Taymia
+"""
+
+    [params.information]
+        enable = false
+
+        [[params.information.list]]
+        title = "Papers"
+        [[params.information.list.items]]
+        details = "2018 · Lorem Ipsum"
+        [[params.information.list.items]]
+        details = "2016 · Sed Fringilla"
+
+        [[params.information.list]]
+        title = "Interests"
+        details = "Climbing, Snowboarding, Photography, Travelling"
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "//github.com/oelouazi"
+        title = "oelouazi"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "https://www.linkedin.com/in/oualid-el-ouazi-1b9060195/"
+        title = "oelouazi"

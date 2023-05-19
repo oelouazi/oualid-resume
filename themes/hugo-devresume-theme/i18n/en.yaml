@@ -1,0 +1,16 @@
+- id: awards
+  translation: Certificats
+- id: education
+  translation: Cursus
+- id: experiences
+  translation: Expériences
+- id: information
+  translation: Information
+- id: interests
+  translation: Hobbies
+- id: languages
+  translation: Langages
+- id: projects
+  translation: Formations
+- id: skills
+  translation: Compétences
